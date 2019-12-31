@@ -1,0 +1,51 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+#king {
+    position: relative;
+    width: 632px;
+    height: 100px;
+    background: url('../img/bg_header.png') no-repeat;
+    margin: 20px auto;
+}
+
+#king ul {
+    overflow: hidden;
+}
+
+#king ul li {
+    position: relative;
+    float: left;
+    width: 69px;
+    height: 69px;
+    margin-right: 10px;
+    margin-top: 15px;
+}
+
+#king li.current {
+    width: 224px;
+}
+
+#king li.current .big {
+    display: block;
+}
+
+#king li.current .small {
+    display: none;
+}
+
+.big {
+    width: 224px;
+    display: none;
+}
+
+.small {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 69px;
+    height: 69px;
+ }

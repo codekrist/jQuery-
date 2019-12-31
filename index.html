@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+    <div id="king">
+        <ul>
+            <li class="current">
+                <a href="#">
+                    <img src="../img/115.jpg" alt="" class="small">
+                    <img src="../img/115-freehover.png" alt="" class="big">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="../img/116.jpg" alt="" class="small">
+                    <img src="../img/116-freehover.png" alt="" class="big">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="../img/173.jpg" alt="" class="small">
+                    <img src="../img/173-freehover.png" alt="" class="big">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="../img/178.jpg" alt="" class="small">
+                    <img src="../img/178-freehover.png" alt="" class="big">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="../img/149.jpg" alt="" class="small">
+                    <img src="../img/149-freehover.png" alt="" class="big">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="../img/168.jpg" alt="" class="small">
+                    <img src="../img/168-freehover.png" alt="" class="big">
+                </a>
+            </li>
+        </ul>
+    </div>
+</body>
+
+</html>
+<script src="./js/jquery.min.js"></script>
+<script>
+    $('#king li').mouseenter(function () {
+        $(this).stop().animate({
+            width: 224
+        }).find('.small').stop().fadeOut().siblings('.big').stop().fadeIn();
+        $(this).siblings('li').stop().animate({
+            width: 69
+        }).find('.small').stop().fadeIn().siblings('.big').stop().fadeOut()
+    })
+</script>
